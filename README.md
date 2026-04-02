@@ -59,9 +59,3 @@ python main.py --seed 1 --lr 3e-5 --train_steps 1000 --batch_size 32 --alpha 0.5
 python predict.py --model_name model.pt --output ticket_predictions.tsv
 ```
 
-## Notes
-
-This is still a transitional version:
-- internal tensor field names in `src/data.py` are kept for compatibility
-- the next step is to replace the original VUA data format with real ticket-risk data
-- the next business step is to add RAG retrieval and an API layer
